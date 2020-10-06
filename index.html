@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="Css/griddesign.css">
+    <link rel="stylesheet" href="Css/homestyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="row">
+          <img src="../img/unnamed.png" alt="homestars Logo" class="logo">
+          <ul class="main-navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="blogpage.html">Blog</a></li>
+            <li><a href="reviewpage.html">Review</a></li>
+            <li><a href="loginpage.html">Log In</a></li>
+            <li><a href="signup_page.html">Sign Up</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="hero-text">
+        <h1>Small home projects that make a big impact.<br> Want to get qoutes ?</h1>
+        <a class="button qoute-button" href="GetQuote.html">Get qoutes</a>
+      </div>
+    </header>
+    <section class="service-section">
+      <div class="row">
+        <h2>Services that we provide</h2>
+        <p class="long-para">
+          We are HomeStars, your community reviewed home service professionals. Whether you’re starting a major renovation or just need a small repair, we have pros across Canada to help you accomplish your project!
+        </p>
+      </div>
+      <div class="row">
+        <div class="col span-1-of-4">
+          <i class="electric"></i>
+          <h3>Electrical Repair</h3>
+          <p>
+           Broken associations, free parts, and introduction of electric wires to dampness can cause numerous kinds of electrical issues.Our experts review your electric framework and fix any issues to forestall superfluous breakdowns and costly fixes.
+          </p>
+        </div>
+        <div class="col span-1-of-4">
+          <i class="roof-repair"></i>
+          <h3>Roofing Repair</h3>
+          <p>
+            Ensuring your home requires a top-down way to deal with upkeep. Our rooftop fix administration will save your home dry and ensured for quite a long time to come.
+          </p>
+        </div>
+        <div class="col span-1-of-4">
+          <i class="heat-cool"></i>
+          <h3>Heating and Cooling Repair</h3>
+          <p>
+            Our experts can do Air molding Repairing of any multifaceted nature in your HVAC framework and get you back to comfort in the absolute first visit.
+          </p>
+        </div>
+        <div class="col span-1-of-4">
+          <i class="plumbing"></i>
+          <h3>Plumbing Repair</h3>
+          <p>
+            Rather than holding up until a spilling pipe turns into an exorbitant migraine or an obstructed channel triggers significant water harm, search for a pipes fix master close to you.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section-test">
+      <div class="row">
+        <h2>Our HomeStars HomeOwners</h2>
+      </div>
+      <div class="row">
+        <div class="col span-1-of-3">
+          <blockquote>
+            We use them for most of our home needs. Very reliable and always get great results.
+            <cite><img src="..img/male-logo.jpg" alt="Customer1">Chad McPherson</cite>
+          </blockquote>
+        </div>
+        <div class="col span-1-of-3">
+          <blockquote>
+            Picked a plumbing contractor, based on HomeStars high ratings, to replace an aging hot water tank...choice did not disapponit, Duke's Plumbing in Calgary provided me with excellent service is all ways!
+            <cite><img src="..img/male-logo.jpg" alt="Customer2">Ed Strickland</cite>
+          </blockquote>
+        </div>
+        <div class="col span-1-of-3">
+          <blockquote>
+            I used HomeStars to find a plumber to hook up a sink and install new taps. It was so helpful to find potential workers in my area, to see what kind of pricing is out there and people's experience. I found exactly what I wanted and he did a great job..."
+            <cite><img src="..img/female-logo.jpg" alt="Customer3">Colleen McDougall</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+    <button class="start-button" onclick="opForm()">Chat Assistant</button>
+
+<div class="pop-chat" id="chatForm">
+  <form  class="chat-container">
+    <div class="container10">
+
+    <div class="chat-text">
+    <p>Chat Assistant</p>
+</div>
+</div>
+<div class="label-text">
+    <p>How can we help you?</p>
+</div>
+    <textarea placeholder="Reply to HomeStars chat assistant." name="message" required></textarea>
+
+    <button type="enter" class="bttn send">Send</button>
+    <button type="close" class="bttn close" onclick="clForm()">Close Chat</button>
+  </form>
+</div>
+
+<script>
+function opForm() {
+  document.getElementById("chatForm").style.display = "block";
+}
+
+function clForm() {
+  document.getElementById("chatForm").style.display = "none";
+}
+</script>
+    
+    <footer>
+      <div class="row">
+        <div class="col-footer">
+          <ul class="foot-navbar">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Press & Announcments</a></li>
+            <li><a href="joinhomestars.html">Join HomeStars</a></li>
+            <li><a href="ContactUspage.html">Contact Us</a></li>
+            <li><a href="newsLetterSignUp.html">News Letter</a></li>
+            <li><a href="#">Terms Of Use</a></li>
+          </ul>
+        </div>
+      <div class="row">
+        <p>
+          &copy; © 2020 HomeStars, Inc., a HomeAdvisor company.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+

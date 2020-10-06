@@ -1,0 +1,674 @@
+/* BASIC SETUP FOR OVERALL CSS */
+/* -------------------------------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+html {
+  background-color: #fff;
+  color: #555555;
+  font-family: 'Poppins','Arial',sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+/* REUSABLE COMPONENTS */
+/* -------------------------------------------------------------------------- */
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+section{
+  padding: 80px 0px;
+}
+.box{
+  padding: 1%;
+}
+/* HEADER */
+/* -------------------------------------------------------------------------- */
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../img/Exquisite-dark-red-sofa-brings-vivaciousness-to-the-white-living-room.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+.hero-text{
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+/* LOGO */
+/* -------------------------------------------------------------------------- */
+
+.logo{
+  height: 80px;
+  width: auto;
+  float: left;
+  margin-top: 10px;
+}
+/* NAV LIST */
+/* -------------------------------------------------------------------------- */
+
+.main-navbar{
+  float: right;
+  list-style: none;
+  margin-top: 55px;
+
+}
+.main-navbar li{
+  display: inline-block;
+  margin-left:40px;
+}
+.main-navbar li a:link,.main-navbar li a:visited {
+  padding: 8px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.5s,color 0.5s;
+}
+.main-navbar li a:hover,.main-navbar li a:active{
+  border-bottom: 2px solid #B22222;
+  color: #B22222;
+}
+/* BLOG */
+/* -------------------------------------------------------------------------- */
+.section-blog{
+  padding: 0;
+}
+.blog-showcase{
+  list-style: none;
+  width: 100%;
+
+}
+.blog-showcase li{
+  display:block;
+  float: left;
+  width: 25%;
+}
+
+}
+.blog-photo {
+  width: 100%;
+  margin: 0px;
+  overflow: hidden;
+  background-color: #000;
+}
+.blog-photo img {
+  width: 100%;
+  height: auto;
+  transform: scale(1.10); /* 1.15*/
+  transition: transform 0.5s,opacity 0.5s;
+  opacity: 0.9;
+
+}
+.blog-photo img:hover{
+  transform: scale(1.03);
+  opacity: 1;
+}
+
+/* -------Utility Classes For Blog-------- */
+.section-blogtext {
+    padding: 2rem 0;
+  }
+.container4 {
+    max-width: 1180px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 3rem;
+  }
+
+.lead {
+    font-size: 20px;
+}
+
+.text-center {
+    text-align: center;
+  }
+
+
+/*---- Buttons----------- */
+.btn {
+    padding: 15px;
+    color: #fff;
+    display: inline-block;
+    border-radius: 30px;
+    margin-top: 10px;
+    
+}
+
+.btn-primary {
+    background-color: #B22222;
+}
+
+.btn-primary:hover {
+    background-color: #8B0000;
+  }
+
+  /* -------Text colors------------ */
+  .text-light {
+    color:  #FF8C00;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .mb {
+    margin-bottom: 1rem;
+  }
+  .section-head{
+    color:#fff;
+  }
+/* Features */
+/* -------------------------------------------------------------------------- */
+.service-section .long-para{
+  margin-bottom: 30px;
+}
+/* HEADING */
+/* -------------------------------------------------------------------------- */
+h1,h2,h3{
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+}
+h1{
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 240%;
+  word-spacing: 4px;
+}
+h2{
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+h3{
+  font-size: 110%;
+  margin-bottom: 15px;
+  letter-spacing: normal;
+  color:  #B22222;
+  font-weight: bold;
+}
+h2::after{
+  display: block;
+  height: 2px;
+  background-color: #B22222;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+/* PARAGRAPGH */
+/* -------------------------------------------------------------------------- */
+.long-para{
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+}
+.box p{
+  font-size: 90%;
+  line-height: 145%;
+}
+/* HEADER BUTTONS MAIN PAGE */
+/* -------------------------------------------------------------------------- */
+.button:link,
+.button:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  border: 1px solid #B22222;
+  transition: background-color 0.5s, border 0.5s, color 0.5s;
+}
+
+.qoute-button:link,
+.qoute-button:visited {
+  background-color: #B22222;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.button:hover,
+.button:active{
+  background-color: #8B0000;
+}
+
+.qoute-button:hover,
+.qoute-button:active {
+  border: 1px solid #8B0000;
+}
+/* testimonials*/
+/* -------------------------------------------------------------------------- */
+.section-test{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(../img/modern-bedroom-black-and-red-excellent-on-regarding-41-fantastic-bedrooms-pictures-1.jpg);
+  background-size: cover;
+  color: white;
+  background-attachment: fixed;
+}
+blockquote{
+  padding: 2%;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 145%;
+  position: relative;
+  margin-top: 40px;
+}
+blockquote::before{
+  content: "\201C";
+  font-size: 500%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -3px;
+}
+cite{
+  font-size: 90%;
+  margin-top: 25px;
+  display: block;
+}
+
+cite img {
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+/*FOOTER*/
+/* -------------------------------------------------------------------------- */
+
+footer{
+  background-color: #B22222;
+  padding: 50px;
+  font-size: 80%;
+}
+.foot-navbar{
+  list-style: none;
+  float: left;
+}
+.social-media{
+  list-style: none;
+  float: right;
+}
+.foot-navbar li,
+.social-media li{
+  display: inline-block;
+  margin-right: 20px;
+}
+.foot-navbar li:last-child,
+.social-media li:last-child{
+  margin-right: 0;
+
+}
+.foot-navbar li a:link,
+.foot-navbar li a:visited,
+.social-media li a:link,
+.social-media li a:visited{
+  text-decoration: none;
+  border: 0;
+  color: #fff;
+  transition: color 0.5s;
+}
+.social-media li a:link,
+.social-media li a:visited{
+  font-size: 160%;
+}
+.facebook-logo,
+.twitter-logo,
+.instagram-logo,{
+  transition: color 0.5s;
+}
+
+
+.facebook-logo:hover{
+  color: #3b5998;
+}
+.twitter-logo:hover{
+  color: #00aced;
+}
+.instagram-logo:hover{
+  color: #517fa4;
+}
+.foot-navbar li a:hover,
+.foot-navbar li a:active{
+  color:#ddd;
+}
+footer p{
+  color: #fff;
+  text-align: center;
+  margin-top: 70px;
+}
+/* ---------FORMS CSS--------*/
+.login-button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+input[type=text], input[type=password],input[type=email],input[type=number],textarea, select { 
+   width: 100%; 
+   margin: 8px 0;
+   padding: 12px 20px; 
+   border: 1px solid white; 
+   box-sizing: border-box; 
+ }
+.login-button:hover { 
+   opacity: 0.7; 
+   color: rgb(84, 141, 247);
+ } 
+
+   
+/*--------Login form------*/
+.container { 
+   padding: 30px; 
+   background-image: linear-gradient(to bottom, #a90329 0%,#a90329 15%,#a90329 31%,#6d0019 89%);
+   width: 30%;
+   align-content: center;
+   margin: 150px 0px 0px 480px;
+   border: 1px solid #B22222;
+   position:absolute;
+   padding-top: 30px;
+   
+}
+
+label{
+  color: #fff;
+  font-weight: normal;
+  float: left;
+
+}
+.login-text{
+  text-align: center;
+  font-size: 60%;
+
+}
+/*---------Sign Up form-----------*/
+.container2 { 
+   padding: 30px; 
+   background-image: linear-gradient(to bottom, #a90329 0%,#a90329 15%,#a90329 31%,#6d0019 89%);
+   width: 30%;
+   align-content: center;
+   margin: 130px 0px 0px 480px;
+   border: 1px solid #B22222;
+   position:absolute;
+   padding-top: 0px;
+   padding-bottom: 20px;
+ }
+ .signup-text{
+  text-align: center;
+  font-size: 60%;
+ }
+
+ /*-----------Review form----------*/
+ .container3 { 
+   padding: 30px; 
+   background-image: linear-gradient(to bottom, #a90329 0%,#a90329 15%,#a90329 31%,#6d0019 89%);
+   width: 30%;
+   align-content: center;
+   margin: 200px 0px 0px 480px;
+   border: 1px solid #B22222;
+   position:absolute;
+   padding-top: 30px;
+   padding-bottom: 30px;
+ }
+ .review-text{
+  text-align: center;
+  font-size: 60%;
+  color: #FFFACD;
+ }
+
+ /*-----------News letter form-----------*/
+ .container5 {
+   padding: 30px; 
+   background-image: linear-gradient(to bottom, #a90329 0%,#a90329 15%,#a90329 31%,#6d0019 89%);
+   width: 30%;
+   align-content: center;
+   margin: 150px 0px 0px 480px;
+   border: 1px solid #B22222;
+   position:absolute;
+   padding-top: 30px;
+ }
+ .newsletter-text{
+  text-align: center;
+  font-size: 60%;
+  color: #FFFACD;
+ }
+
+/*---------Get Qoutes--------*/
+
+.container6 {
+   padding: 30px; 
+   background-image: linear-gradient(to bottom, #a90329 0%,#a90329 15%,#a90329 31%,#6d0019 89%);
+   width: 30%;
+   align-content: center;
+   margin: 150px 0px 0px 480px;
+   border: 1px solid #B22222;
+   position:absolute;
+   padding-top: 30px;
+ }
+ .qoute-text{
+  text-align: center;
+  font-size: 60%;
+  color: #FFFACD;
+ }
+/*-----------Categories----------*/
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  padding-bottom: 315.2px;
+  background-color: #7C072E;
+  margin-top: 0px;
+  padding-top: 20px;
+
+}
+.column li {
+  list-style: none;
+  text-align: center;
+}
+.column li a {
+  color: #fff;
+  font-size: 70%;
+}
+
+.row1: after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.cat-text{
+  text-align: center;
+  padding-top: 150px;
+  margin-bottom: 0px;
+}
+/*-------------Contact us-----------*/
+
+.container7 {
+   padding: 30px; 
+   background-image: linear-gradient(to bottom, #a90329 0%,#a90329 15%,#a90329 31%,#6d0019 89%);
+   width: 40%;
+   align-content: center;
+   /*margin: 100px 0px 0px 480px;*/
+   border: 1px solid #B22222;
+   position:absolute;
+   margin-top: 103px;
+   margin-bottom: 90px;
+   margin-left: 400px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+
+ }
+ .contact-text{
+  text-align: center;
+  font-size: 50%;
+  color: #FFFACD;
+
+ }
+ /*--------Forgot Password----------*/
+
+ .container8 {
+   padding: 30px; 
+   background-image: linear-gradient(to bottom, #a90329 0%,#a90329 15%,#a90329 31%,#6d0019 89%);
+   width: 40%;
+   align-content: center;
+   /*margin: 100px 0px 0px 480px;*/
+   border: 1px solid #B22222;
+   position:absolute;
+   margin-top: 200px;
+   margin-bottom: 90px;
+   margin-left: 400px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+
+ }
+ .password-text{
+  text-align: center;
+  font-size: 50%;
+  color: #FFFACD;
+  margin-bottom: 20px;
+
+ }
+/*---------Join Homestars------------*/
+
+.container9 {
+   padding: 30px; 
+   background-image: linear-gradient(to bottom, #a90329 0%,#a90329 15%,#a90329 31%,#6d0019 89%);
+   width: 40%;
+   align-content: center;
+   /*margin: 100px 0px 0px 480px;*/
+   border: 1px solid #B22222;
+   position:absolute;
+   margin-top: 200px;
+   margin-bottom: 90px;
+   margin-left: 400px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+
+ }
+ .join-text{
+  text-align: center;
+  font-size: 50%;
+  color: #FFFACD;
+  margin-bottom: 20px;
+
+ }
+ .join-head {
+  text-align: left;
+  font-size: 20px;
+  color:  #FF8C00;
+  float: right;
+  margin-top: 70px;
+  margin-right: 300px;
+ }
+ /*------------Chat Interface-----------*/
+
+ /* Button used to open the chat form - fixed at the bottom of the page */
+.start-button {
+  background-color:#FF8C00;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 180px;
+  border-radius: 30px;
+}
+
+/* The popup chat - hidden by default */
+.pop-chat {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the chat container */
+.chat-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  border: 2px solid #A30B57;
+}
+
+/* Full-width textarea */
+.chat-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #FBF8FA;
+  resize: none;
+  min-height: 150px;
+}
+
+/* When the textarea gets focus */
+.chat-container textarea:focus {
+  background-color: #EEECED;
+  outline: none;
+}
+
+/* Set a style for the enter/close button */
+.chat-container .bttn {
+  background-color: #9E082E;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  border-radius: 30px;
+}
+
+/* Add a purple background color to the close button */
+.chat-container .close {
+  background-color: #FF8C00;
+}
+
+/* Add some hover effects to buttons */
+.chat-container .send:hover, .start-button:hover {
+  opacity: 1;
+}
+.chat-text{
+  color:#fff;
+  text-align: center;
+}
+
+.label-text{
+  color: #5A5A5A;
+  font-size: 20px;
+}
+/* Purple container in chat box*/
+.container10 {
+   padding: 10px; 
+   background-image: linear-gradient(to bottom, #a90329 0%,#a90329 15%,#a90329 31%,#6d0019 89%);
+   width: 100%;
+   border: 1px solid #B22222;
+   position:relative;
+   margin-top: 0px;
+   margin-bottom: 10px;
+   margin-left: 0px;
+   padding-top: 10px;
+   padding-bottom: 40px;
+   margin-right: 10px;

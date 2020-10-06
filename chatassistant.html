@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="Css/homestyle.css">
+    	<title> Chat Assistant</title>
+    	</head>
+<body>
+
+<button class="start-button" onclick="opForm()">Chat Assistant</button>
+
+<div class="pop-chat" id="chatForm">
+  <form  class="chat-container">
+  	<div class="container10">
+
+  	<div class="chat-text">
+    <p>Chat Assistant</p>
+</div>
+</div>
+<div class="label-text">
+    <p>How can we help you?</p>
+</div>
+    <textarea placeholder="Reply to HomeStars chat assistant." name="message" required></textarea>
+
+    <button type="enter" class="bttn send">Send</button>
+    <button type="close" class="bttn close" onclick="clForm()">Close Chat</button>
+  </form>
+</div>
+
+<script>
+function opForm() {
+  document.getElementById("chatForm").style.display = "block";
+}
+
+function clForm() {
+  document.getElementById("chatForm").style.display = "none";
+}
+</script>
+
+</body>
+</html>
